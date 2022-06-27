@@ -1,0 +1,92 @@
+---
+title: Atrial Fibrillation and Electrical Cardioversion
+subtitle: Pilot Study
+author:
+  - Mina Sous
+  - Anish Shah
+data: "`r format(Sys.Date(), '%B %d, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    self_contained: true
+    nature:
+      titleSlideClass: [center, middle, inverse]
+      highlightLines: true
+---
+
+
+```{r, knitr, include=FALSE}
+knitr::opts_chunk$set(
+   fig.retina = 3,
+   warning = FALSE,
+   message = FALSE,
+   echo = FALSE,
+   cache = TRUE
+)
+```
+
+
+```{r, targets}
+tar_load(proc)
+```
+
+```{r themer, echo=FALSE, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(primary_color = "#091F40", secondary_color = "#AC1E2D")
+```
+
+class: center, middle, inverse
+# Overview
+
+---
+
+### Objectives
+
+1. Evaluate pilot data on TEE guided cardioversion
+
+1. Efficacy of electrical cardioversion in atrial arrhythmias
+
+1. Identify factors predisposing to successful cardioversion
+
+1. Adjustment for clinical risk factors that would effect cardioversion success
+
+---
+class: center, middle, inverse
+# Findings
+
+---
+
+```{r, demo}
+proc |>
+	select(success, age, gender, height, bmi, bsa) |>
+	tbl_summary(
+		by = success
+	) |>
+	add_overall()
+```
+
+---
+
+```{r, echo}
+proc |>
+	select(success, type_of_arrhythmia, joules_used, la_diam, la_vol_index, lvef, lvi_dd, e_vel, e_vel_m_s) |>
+	tbl_summary(
+		by = success,
+		missing = "no"
+	) |>
+	add_overall() |>
+	add_p()
+```
+
+---
+
+```{r}
+glm(success ~ lvi_dd, family = "binomial", data = proc) |>
+	tidy(exponentiate = TRUE, conf.int = TRUE)
+
+glm(success ~ lvef + lvi_dd, family = "binomial", data = proc) |>
+	tidy(exponentiate = TRUE, conf.int = TRUE)
+
+```
+
+
