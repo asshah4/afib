@@ -12,6 +12,8 @@ library(tarchetypes)
 # if you keep your functions in external scripts.
 source("R/intake-functions.R")
 source("R/tidy-functions.R")
+source("R/model-functions.R")
+source("R/table-functions.R")
 
 # Set target-specific options such as packages.
 tar_option_set(
@@ -20,7 +22,8 @@ tar_option_set(
 		"tidymodels",
 		"knitr",
 		"gt",
-		"gtsummary"
+		"gtsummary",
+		"xaringanthemer"
 	)
 )
 
@@ -34,6 +37,12 @@ targets <- list(
 	
 	# Tidy
 	tar_target(proc, tidy_data(raw)),
+	
+	# Models
+	tar_target(models, make_models(proc)),
+	
+	# Tables
+	tar_target(tbls, make_tables(models)),
 	
 	# Explore
 	tar_render(pilot, file.path("R", "pilot.Rmd"))

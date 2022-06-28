@@ -28,6 +28,8 @@ knitr::opts_chunk$set(
 
 ```{r, targets}
 tar_load(proc)
+tar_load(models)
+tar_load(tbls)
 ```
 
 ```{r themer, echo=FALSE, include=FALSE, warning=FALSE}
@@ -62,17 +64,19 @@ proc |>
 	tbl_summary(
 		by = success
 	) |>
-	add_overall()
+	add_overall() |>
+	add_p()
 ```
 
 ---
 
 ```{r, echo}
 proc |>
-	select(success, type_of_arrhythmia, joules_used, la_diam, la_vol_index, lvef, lvi_dd, e_vel, e_vel_m_s) |>
+	select(success, type_of_arrhythmia, joules_used, la_diam, la_vol_index, lvef, lvi_dd) |>
 	tbl_summary(
 		by = success,
-		missing = "no"
+		missing = "no",
+		type = c(joules_used, lvef, lvi_dd, la_vol_index, la_diam) ~ "continuous"
 	) |>
 	add_overall() |>
 	add_p()
@@ -80,13 +84,24 @@ proc |>
 
 ---
 
+.pull-left[
 ```{r}
-glm(success ~ lvi_dd, family = "binomial", data = proc) |>
-	tidy(exponentiate = TRUE, conf.int = TRUE)
+# Unadjusted
+tbls$lvidd
 
-glm(success ~ lvef + lvi_dd, family = "binomial", data = proc) |>
-	tidy(exponentiate = TRUE, conf.int = TRUE)
-
+# Adjusted for LVEF
+tbls$lvidd_ef
 ```
+]
+
+.pull-right[
+```{r}
+# Adjusted for LA
+tbls$lvidd_la
+
+# Adjusted for all
+tbls$lvidd_la_ef
+```
+]
 
 
