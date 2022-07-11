@@ -25,17 +25,79 @@ knitr::opts_chunk$set(
 )
 ```
 
-
-```{r, targets}
-tar_load(proc)
-tar_load(models)
-tar_load(tbls)
-```
-
 ```{r themer, echo=FALSE, include=FALSE, warning=FALSE}
 library(xaringanthemer)
 style_duo_accent(primary_color = "#091F40", secondary_color = "#AC1E2D")
 ```
+
+```{r, targets}
+tar_load(file_mina)
+```
+
+
+```{r}
+
+proc <-
+	file_mina |>
+	readxl::read_xlsx() |>
+	janitor::clean_names() |>
+	mutate(success = as.factor(success)) |>
+	mutate(across(chronic_lung_disease:icd_pm, ~ replace_na(.x, 0))) |>
+	mutate(across(c(anti_arrhythmics, rate_controlling_agents, anticoagulants), ~ replace_na(.x, "None"))) 
+	
+	
+lvidd <- glm(success ~ lvi_dd, family = "binomial", data = proc)
+
+lvidd_ef <-
+	glm(success ~ lvef + lvi_dd, family = "binomial", data = proc)
+
+lvidd_la <-
+	glm(success ~ la_vol_index + lvi_dd,
+			family = "binomial",
+			data = proc)
+
+lvidd_la_ef <-
+	glm(success ~ lvef + la_vol_index + lvi_dd,
+			family = "binomial",
+			data = proc) 
+
+models <-	list(
+	lvidd = lvidd,
+	lvidd_ef = lvidd_ef,
+	lvidd_la = lvidd_la,
+	lvidd_la_ef = lvidd_la_ef
+)
+	
+# Unadjusted
+lvidd <- 
+	tbl_regression(models$lvidd, exponentiate = TRUE) |>
+	add_glance_source_note() 
+
+# Adjusted for LVEF
+lvidd_ef <-
+	tbl_regression(models$lvidd_ef, exponentiate = TRUE) |>
+	add_glance_source_note() 
+
+# Adjusted for LA
+lvidd_la <- 
+	tbl_regression(models$lvidd_la, exponentiate = TRUE) |>
+	add_glance_source_note() 
+
+# Adjusted for all
+lvidd_la_ef <- 
+	tbl_regression(models$lvidd_la_ef, exponentiate = TRUE) |>
+	add_glance_source_note() 
+
+tbls <-
+	list(
+		lvidd = lvidd, 
+		lvidd_ef = lvidd_ef, 
+		lvidd_la = lvidd_la, 
+		lvidd_la_ef = lvidd_la_ef
+	)
+
+```
+
 
 class: center, middle, inverse
 # Overview

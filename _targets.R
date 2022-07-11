@@ -29,21 +29,9 @@ tar_option_set(
 
 # End this file with a list of target objects.
 targets <- list(
-	# Files
+	# AF and Cardioversion
 	tar_file(file_mina, file.path("data", "mina-data_06-07-22.xlsx")),
+	tar_render(pilot, file.path("R", "pilot.Rmd")),
 	
-	# Intake
-	tar_target(raw, read_mina_data(file_mina)),
 	
-	# Tidy
-	tar_target(proc, tidy_data(raw)),
-	
-	# Models
-	tar_target(models, make_models(proc)),
-	
-	# Tables
-	tar_target(tbls, make_tables(models)),
-	
-	# Explore
-	tar_render(pilot, file.path("R", "pilot.Rmd"))
 )
