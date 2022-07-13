@@ -10,20 +10,25 @@ library(tarchetypes)
 # Define custom functions and other global objects.
 # This is where you write source(\"R/functions.R\")
 # if you keep your functions in external scripts.
-source("R/intake-functions.R")
-source("R/tidy-functions.R")
-source("R/model-functions.R")
-source("R/table-functions.R")
+source("R/intake.R")
 
 # Set target-specific options such as packages.
 tar_option_set(
 	packages = c(
+		# Cleaning
 		"tidyverse",
+		"readxl",
+		"janitor",
+		# Modeling
 		"tidymodels",
+		# Presenting
 		"knitr",
 		"gt",
 		"gtsummary",
-		"xaringanthemer"
+		"xaringanthemer",
+		# Validating
+		"pointblank",
+		"naniar"
 	)
 )
 
@@ -33,5 +38,10 @@ targets <- list(
 	tar_file(file_mina, file.path("data", "mina-data_06-07-22.xlsx")),
 	tar_render(pilot, file.path("R", "pilot.Rmd")),
 	
+	# AF Registry
+	tar_file(file_messy, file.path("data", "unprocessed_catheter_ablation.xlsx")),
+	tar_file(file_convo, file.path("columns.yml")),
+	tar_file(file_af, file.path("data", "af_registry.csv"))
+	#tar_make(raw, read_in_messy_data(file_messy, file_convo, file_af))
 	
 )

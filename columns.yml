@@ -1,0 +1,109 @@
+level1:
+
+  ID:
+    desc: Unique identifier
+  DT:
+   valid:
+   - col_is_date()
+  HX:
+  DEMO:
+  MED:
+  EVENT:
+  ECHO:
+  AF:
+  ECG:
+  
+level2:
+
+  AUTHOR:
+  MRN:
+  DNA:
+  HOSPITAL:
+  ENROLLMENT:
+  BLOOD:
+  INSURANCE:
+  ZIP:
+  
+  BIRTH:
+  AGE:
+  SEX:
+  BMI:
+  WT:
+  HT:
+  BSA:
+  SMOKE:
+  RACE:
+  ANCESTRY:
+  
+  DX:
+  DM:
+  HTN:
+  HLD:
+  CVA:
+  TIA:
+  COPD:
+  OSA:
+  CKD:
+  ESRD:
+  PVD:
+  HYPERTHYROID:
+  AFL:
+  CHF:
+  CAD:
+  CABG:
+  VHD:
+  
+  TTE:
+  
+  VALVE:
+  VOLUME:
+  SIZE:
+  FUNCTION:
+  LVH:
+  
+  FAMILY:
+  DCCV:
+  ABLATION:
+  RECURRENCE:
+  MONITOR:
+  PPM:
+  AAD:
+  BB:
+  OAC:
+  
+  LDKA:
+  DEATH:
+  HOSPITALIZATION:
+  ICU:
+  COMPLICATION:
+  
+level3:
+
+  CLASS:
+  TX:
+  TYPE:
+  DOSE:
+  
+  SEVERITY:
+  LA:
+  RA:
+  LV:
+  RV:
+  
+  RATE:
+  REDO:
+  MAPPING:
+  SEDATION:
+  SITE:
+  ENERGY:
+  ISOLATION:
+  OPERATOR:
+  
+  INTERVAL:
+  BURDEN:
+  TIME:
+  LENGTH:
+  COUNT:
+  NOTE:
+  
+  "\\d{4}": []
