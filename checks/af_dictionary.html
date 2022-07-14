@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+
+
+</head>
+<body>
+<div id="pb_information" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+  <style>@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#pb_information .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 130%;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#pb_information .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pb_information .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#pb_information .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#pb_information .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pb_information .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#pb_information .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#pb_information .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#pb_information .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#pb_information .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#pb_information .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#pb_information .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pb_information .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#pb_information .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#pb_information .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#pb_information .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#pb_information .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pb_information .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#pb_information .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#pb_information .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pb_information .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#pb_information .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#pb_information .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pb_information .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pb_information .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#pb_information .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#pb_information .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#pb_information .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pb_information .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pb_information .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#pb_information .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#pb_information .gt_left {
+  text-align: left;
+}
+
+#pb_information .gt_center {
+  text-align: center;
+}
+
+#pb_information .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#pb_information .gt_font_normal {
+  font-weight: normal;
+}
+
+#pb_information .gt_font_bold {
+  font-weight: bold;
+}
+
+#pb_information .gt_font_italic {
+  font-style: italic;
+}
+
+#pb_information .gt_super {
+  font-size: 65%;
+}
+
+#pb_information .gt_two_val_uncert {
+  display: inline-block;
+  line-height: 1em;
+  text-align: right;
+  font-size: 60%;
+  vertical-align: -0.25em;
+  margin-left: 0.1em;
+}
+
+#pb_information .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#pb_information .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#pb_information .gt_slash_mark {
+  font-size: 0.7em;
+  line-height: 0.7em;
+  vertical-align: 0.15em;
+}
+
+#pb_information .gt_fraction_numerator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: 0.45em;
+}
+
+#pb_information .gt_fraction_denominator {
+  font-size: 0.6em;
+  line-height: 0.6em;
+  vertical-align: -0.05em;
+}
+
+#pb_information {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .15px;
+}
+
+#pb_information a {
+  color: #375F84;
+  text-decoration: none;
+}
+
+#pb_information a:hover {
+  color: #375F84;
+  text-decoration: underline;
+}
+
+#pb_information p {
+  overflow: visible;
+  margin-top: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+
+#pb_information ul {
+  list-style-type: square;
+  padding-left: 25px;
+  margin-top: -4px;
+  margin-bottom: 6px;
+}
+
+#pb_information li {
+  text-indent: -1px;
+}
+
+#pb_information h4 {
+  font-weight: 500;
+  color: #444444;
+}
+
+#pb_information code {
+  font-family: 'IBM Plex Mono', monospace, courier;
+  font-size: 90%;
+  font-weight: 500;
+  color: #666666;
+  background-color: transparent;
+  padding: 0;
+}
+
+#pb_information .pb_date {
+  text-decoration-style: solid;
+  text-decoration-color: #9933CC;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  font-variant-numeric: tabular-nums;
+  margin-right: 4px;
+}
+
+#pb_information .pb_label {
+  border: solid 1px;
+  border-color: inherit;
+  padding: 0px 3px 0px 3px;
+}
+
+#pb_information .pb_label_rounded {
+  border: solid 1px;
+  border-color: inherit;
+  border-radius: 8px;
+  padding: 0px 8px 0px 8px;
+}
+
+#pb_information .pb_sub_label {
+  font-size: smaller;
+  color: #777777;
+}
+
+#pb_information .pb_col_type {
+  font-size: 75%;
+}
+
+#pb_information .gt_sourcenote {
+  height: 35px;
+  font-size: 60%;
+  padding: 0;
+}
+
+#pb_information .gt_group_heading {
+  text-indent: -3px;
+}
+</style>
+  <table class="gt_table" style="table-layout: fixed;; width: 0px">
+  <colgroup>
+    <col style="width:875px;"/>
+  </colgroup>
+  <thead class="gt_header">
+    <tr>
+      <th colspan="1" class="gt_heading gt_title gt_font_normal" style="color: #444444; font-size: 28px; text-align: left; font-weight: 500;">AF Registry Data Dictionary</th>
+    </tr>
+    <tr>
+      <th colspan="1" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="font-size: 12px; text-align: left;"><span style="text-decoration-style:solid;text-decoration-color:#ADD8E6;text-decoration-line:underline;text-underline-position:under;color:#333333;font-variant-numeric:tabular-nums;padding-left:4px;margin-right:5px;padding-right:2px;">AF Registry Data Dictionary</span></p>
+<div style="height:25px;margin-top:10px;"><span style="background-color:#F1D35A;color:#222222;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 5px;font-weight:bold;border:solid 1px #F1D35A;padding:2px 15px 2px 15px;font-size:smaller;">tibble</span>
+<span style="background-color:none;color:#222222;padding:0.5em 0.5em;position:inherit;margin:5px 10px 5px -4px;font-weight:bold;border:solid 1px #F1D35A;padding:2px 15px 2px 15px;font-size:smaller;">afib_registry</span><span style="background-color:#eecbff;color:#333333;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 5px;font-weight:bold;border:solid 1px #eecbff;padding:2px 15px 2px 15px;font-size:smaller;">Rows</span>
+<span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #eecbff;padding:2px 15px 2px 15px;font-size:smaller;">238</span>
+<span style="background-color:#BDE7B4;color:#333333;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 1px;font-weight:bold;border:solid 1px #BDE7B4;padding:2px 15px 2px 15px;font-size:smaller;">Columns</span>
+<span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #BDE7B4;padding:2px 15px 2px 15px;font-size:smaller;">177</span></div>
+</th>
+    </tr>
+  </thead>
+  
+  <tbody class="gt_table_body">
+    <tr class="gt_group_heading_row">
+      <td colspan="1" class="gt_group_heading" style="color: #444444; font-weight: 500; text-transform: uppercase; background-color: #FCFCFC; border-bottom-width: 1; border-bottom-style: solid; border-bottom-color: #EFEFEF;">Table</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><h4 style="margin-bottom:5px;">DESCRIPTION</h4>
+<p>Registry of patients with atrial fibrillation that have undergone catheter ablation in the Illinois Medical District.</p>
+</div></td></tr>
+    <tr class="gt_group_heading_row">
+      <td colspan="1" class="gt_group_heading" style="color: #444444; font-weight: 500; text-transform: uppercase; background-color: #FCFCFC; border-bottom-width: 1; border-bottom-style: solid; border-bottom-color: #EFEFEF;">Columns</td>
+    </tr>
+    <tr class="gt_row_group_first"><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_AUTHOR</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_DNA</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_PATIENT</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ENROLLMENT</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_DX</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_HOSPITAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_BLOOD</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_BIRTH</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_SEX</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_ANCESTRY</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_AGE</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_BMI</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_DM</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HTN</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_OSA</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_OSA_TX</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CAD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_CAD</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_ESRD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CVA</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CKD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_PVD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HYPERTHYROID</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HYPERTHYROID_TX</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_COPD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CHF</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_VHD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_VHD</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_LV_QUAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LA_QUAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_TTE</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_BSA</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_4C</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_2C</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_INDEX</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_AREA_RA_QUAL</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_AREA_RA_INDEX</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ECHO</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DX_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_CHADSVASC</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_HASBLED</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_FAMILY</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_SMOKING</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_INSURANCE</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_ZIP</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_INDEX</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_INDEX</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_MONITOR_RATE</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_MONITOR</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RECURRENCE</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_RECURRENCE</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RECURRENCE_INTERVAL</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_1</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_TOTAL</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_LDKA_INTERVAL</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_PPM</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_PPM</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_PPM</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD_DOSE</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_OAC</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_OAC_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_OAC</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_HOSPITALIZATION</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_LENGTH</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_LENGTH</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ICU</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_CVA</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_COMPLICATION</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_COMPLICATION</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_DEATH</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_DEATH</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_PHTN</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_ISOLATION</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ABLATION_REDO_1</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CHF_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_WT</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_HT</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CAD_TX</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CABG</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_VHD_TX</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_CREATININE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_HEMOGLOBIN</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_BNP</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_TROPONIN</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_SODIUM</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE_SEVERITY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_LV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LV_QUAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_LVH_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_LVH_SEVERITY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_RV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_RV_QUAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DX_BURDEN</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DCCV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DCCV_TOTAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_MONITOR_BURDEN</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_MONITOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB_DOSE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB_DOSE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_HOSPITALIZATION</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ICU</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_LDKA</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_LDKA</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_LDKA</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_2</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_2</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_3</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_3</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_4</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_4</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_5</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_ENERGY</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_SITE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_MAPPING</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_LESIONS</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_TYPE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_5</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label"></strong></p>
+</div></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="1"><span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin-left:10px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;padding:2px 10px 2px 10px;">2022-07-14 15:13:28 CDT</span>
+<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;margin:5px 1px 5px 0;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">&lt; 1 s</span>
+<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 1px 5px -1px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">2022-07-14 15:13:29 CDT</span></td>
+    </tr>
+  </tfoot>
+  
+</table>
+</div>
+</body>
+</html>
