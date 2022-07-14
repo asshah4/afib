@@ -1,0 +1,30 @@
+name: "Atrial Fibrillation Registry"
+navbar:
+  title: "Data"
+  left:
+    - text: "Home"
+      href: https://asshah4.github.io
+    - text: "Overview"
+      href: checks/af_summary.html
+    - text: "Dictionary"  
+      href: checks/af_dictionary.html
+    - text: "Validity"  
+      href: checks/af_validity.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:ashah282@uic.edu
+    - icon: fa-github fa-lg
+      href: http://github.com/asshah4
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/shah_in_boots
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/anish-shah-326991177/
+output_dir: "."
+
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: true
+    toc_float: true
+    css: styles.css 
