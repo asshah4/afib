@@ -3,6 +3,7 @@ check_table_scan <- function(raw) {
 }
 
 check_table_information <- function(raw) {
+	
 	informant <-
 		create_informant(
 			tbl = raw,
@@ -23,7 +24,24 @@ check_table_information <- function(raw) {
 		info_columns(
 			columns = starts_with("HX") & !ends_with("TX"),
 			info = "Presence or absence of clinical morbidity."
-		)
+		) |>
+		info_columns(
+			columns = ECHO_FUNCTION_LV_QUAL,
+			info = "Values = {lv_fn}"
+		) |>
+		info_snippet(
+			snippet_name = "lv_fn",
+			fn = ~ . %>% select(ECHO_FUNCTION_LV_QUAL) %>% val_labels()
+		) |>
+		info_columns(
+			columns = ECHO_SIZE_LA_QUAL,
+			info = "Values = {la_sz}"
+		) |>
+		info_snippet(
+			snippet_name = "la_sz",
+			fn = ~ . %>% select(ECHO_SIZE_LA_QUAL) %>% val_labels()
+		) |>
+		incorporate()
 }
 
 check_table_quality <- function(raw) {
