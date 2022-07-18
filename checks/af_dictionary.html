@@ -523,7 +523,7 @@ html {
 <span style="background-color:none;color:#222222;padding:0.5em 0.5em;position:inherit;margin:5px 10px 5px -4px;font-weight:bold;border:solid 1px #F1D35A;padding:2px 15px 2px 15px;font-size:smaller;">afib_registry</span><span style="background-color:#eecbff;color:#333333;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 5px;font-weight:bold;border:solid 1px #eecbff;padding:2px 15px 2px 15px;font-size:smaller;">Rows</span>
 <span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #eecbff;padding:2px 15px 2px 15px;font-size:smaller;">238</span>
 <span style="background-color:#BDE7B4;color:#333333;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 0px 5px 1px;font-weight:bold;border:solid 1px #BDE7B4;padding:2px 15px 2px 15px;font-size:smaller;">Columns</span>
-<span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #BDE7B4;padding:2px 15px 2px 15px;font-size:smaller;">177</span></div>
+<span style="background-color:none;color:#333333;padding:0.5em 0.5em;position:inherit;margin:5px 0px 5px -4px;font-weight:bold;border:solid 1px #BDE7B4;padding:2px 15px 2px 15px;font-size:smaller;">187</span></div>
 </th>
     </tr>
   </thead>
@@ -539,542 +539,690 @@ html {
       <td colspan="1" class="gt_group_heading" style="color: #444444; font-weight: 500; text-transform: uppercase; background-color: #FCFCFC; border-bottom-width: 1; border-bottom-style: solid; border-bottom-color: #EFEFEF;">Columns</td>
     </tr>
     <tr class="gt_row_group_first"><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_AUTHOR</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Name of reviewer</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_DNA</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ID_DNA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_PATIENT</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ID_PATIENT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ENROLLMENT</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ENROLLMENT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_DX</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_DX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ID_HOSPITAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Hospital site</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = UIC</li>
+<li>2 = JBVA</li>
+<li>3 = ACMC</li>
+<li>4 = MS</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_BLOOD</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_BLOOD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_BIRTH</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_BIRTH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_SEX</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_SEX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_ANCESTRY</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Genetic ancestry</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>0 = European</li>
+<li>1 = African</li>
+<li>2 = Hispanic</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_AGE</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_AGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_BMI</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_BMI</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_DM</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_DM</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HTN</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_HTN</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_OSA</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_OSA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_OSA_TX</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_OSA_TX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CAD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CAD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_CAD</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_CAD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_ESRD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_ESRD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CVA</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CVA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CKD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CKD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_PVD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_PVD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HYPERTHYROID</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_HYPERTHYROID</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_HYPERTHYROID_TX</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_HYPERTHYROID_TX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_COPD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_COPD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CHF</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CHF</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_VHD</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_VHD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_VHD</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_VHD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_LV_QUAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label">INFO</strong> Values = c(<code>Normal (&gt;= 55%)</code> = 0, <code>Mildly Reduced (45-55%)</code> = 1, <code>Moderately Reduced (30-35%)</code> = 2, <code>Severely Reduced (&lt; 30%)</code> = 3)</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_FUNCTION_LV_QUAL</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>0 = Normal (&gt;= 55%)</li>
+<li>1 = Mildly Reduced (45-55%)</li>
+<li>2 = Moderately Reduced (30-35%)</li>
+<li>3 = Severely Reduced (&lt; 30%)</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LA_QUAL</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label">INFO</strong> Values = c(Normal = 0, <code>Mildly Dilated</code> = 1, <code>Moderately Dilated</code> = 2, <code>Severely Dilated</code> = 3)</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_SIZE_LA_QUAL</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>0 = Normal</li>
+<li>1 = Mildly Dilated</li>
+<li>2 = Moderately Dilated</li>
+<li>3 = Severely Dilated</li>
+</ul>
 </div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_TTE</code>  <code class="pb_col_type">Date</code></p>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ECHO</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ECHO</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_BSA</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_BSA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_4C</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VOLUME_LA_4C</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_2C</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VOLUME_LA_2C</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LA_INDEX</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VOLUME_LA_INDEX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_AREA_RA_QUANT</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_AREA_RA_QUANT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_AREA_RA_INDEX</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_AREA_RA_INDEX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ECHO</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_ECHO</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DX_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_DX_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>0 = Paroxysmal</li>
+<li>1 = Permanent</li>
+<li>2 = Persistent</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_CHADSVASC</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_RISK_CHADSVASC</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_HASBLED</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_RISK_HASBLED</p>
 </div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RISK_FAMILY</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_FAMILY_AF</code>  <code class="pb_col_type">numeric</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_FAMILY_AF</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_SMOKING</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_SMOKING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_INSURANCE</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_INSURANCE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_ZIP</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_ZIP</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_INDEX</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_INDEX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_INDEX</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_ABLATION_INDEX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = PVI</li>
+<li>2 = Maze</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_MONITOR_RATE</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_MONITOR_RATE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_MONITOR</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_MONITOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RECURRENCE</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_RECURRENCE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_RECURRENCE</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_RECURRENCE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_RECURRENCE_INTERVAL</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_RECURRENCE_INTERVAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_1</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_REDO_1</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_TOTAL</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_TOTAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_LDKA_INTERVAL</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_LDKA_INTERVAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_PPM</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_PPM</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_PPM</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_PPM</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_PPM</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_PPM</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_AAD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_AAD_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Amiodarone</li>
+<li>2 = Sotalol</li>
+<li>3 = Propafenone</li>
+<li>4 = Flecanide</li>
+<li>5 = Procainamide</li>
+<li>6 = Mexiletine</li>
+<li>7 = Disopyramide</li>
+<li>8 = Dofetilide</li>
+<li>9 = Dronedarone</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_AAD_DOSE</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_AAD_DOSE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_OAC</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_OAC</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_OAC_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_OAC_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Warfarin</li>
+<li>2 = Heparin</li>
+<li>3 = LMWH</li>
+<li>4 = NOAC</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_OAC</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_OAC</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_HOSPITALIZATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_HOSPITALIZATION_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Cardiac</li>
+<li>2 = Noncardiac</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_HOSPITALIZATION</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_HOSPITALIZATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_LENGTH</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_HOSPITALIZATION_LENGTH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_ICU</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_LENGTH</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_ICU_LENGTH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_ICU_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Cardiac</li>
+<li>2 = Noncardiac</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ICU</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_ICU</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_CVA</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_CVA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_COMPLICATION</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_COMPLICATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_COMPLICATION</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_COMPLICATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_DEATH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_DEATH</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_DEATH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_DEATH_TYPE</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Cardiac</li>
+<li>2 = Noncardiac</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_DEATH</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_DEATH</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_PHTN</code>  <code class="pb_col_type">numeric</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_PHTN</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_ISOLATION</code>  <code class="pb_col_type">numeric</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_ABLATION_REDO_1</code>  <code class="pb_col_type">character</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_ABLATION_REDO_1</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CHF_TYPE</code>  <code class="pb_col_type">haven_labelled, vctrs_vctr, double</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Preserved or reduced heart failure (&lt;= 50)</p>
+<p><strong class="pb_sub_label">VALUES</strong></p>
+<ul>
+<li>1 = Reduced</li>
+<li>2 = Preserved</li>
+</ul>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_WT</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_WT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DEMO_HT</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DEMO_HT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CAD_TX</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CAD_TX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_CABG</code>  <code class="pb_col_type">logical</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_CABG</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_VHD_TX</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_VHD_TX</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_CREATININE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_CREATININE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_HEMOGLOBIN</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_HEMOGLOBIN</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_BNP</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_BNP</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_PROBNP</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_PROBNP</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_TROPONIN</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_TROPONIN</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">LAB_SODIUM</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> LAB_SODIUM</p>
 </div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE_DZ</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VALVE_DZ</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VALVE_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VALVE_SEVERITY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VALVE_SEVERITY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_VOLUME_LV</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_VOLUME_LV</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_STRAIN_LA</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_STRAIN_LA</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_STRAIN_LV</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_STRAIN_LV</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_LV_QUANT</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_FUNCTION_LV_QUANT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LV_QUANT</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_SIZE_LV_QUANT</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_LV_QUAL</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_SIZE_LV_QUAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_LVH_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_LVH_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_LVH_SEVERITY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_LVH_SEVERITY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_FUNCTION_RV</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_FUNCTION_RV</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">ECHO_SIZE_RV_QUAL</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> ECHO_SIZE_RV_QUAL</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_CMR</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_CMR</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">CMR_NOTES</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> CMR_NOTES</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DX_BURDEN</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_DX_BURDEN</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DCCV</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_DCCV</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_DCCV_TOTAL</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_DCCV_TOTAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_MONITOR_BURDEN</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_MONITOR_BURDEN</p>
 </div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_MONITOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTES_MONITOR</code>  <code class="pb_col_type">character</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTES_MONITOR</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_AAD</code>  <code class="pb_col_type">Date</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_AAD</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_BB</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_BB_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_BB_DOSE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_BB_DOSE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_CCB</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_CCB_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">MED_CCB_DOSE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> MED_CCB_DOSE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_HOSPITALIZATION</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_HOSPITALIZATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ICU</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ICU</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_ICU_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_ICU_INTERVAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_HOSPITALIZATION_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_HOSPITALIZATION_INTERVAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_LDKA</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_LDKA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_LDKA</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_LDKA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_LDKA</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_LDKA</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">EVENT_DEATH_INTERVAL</code>  <code class="pb_col_type">logical</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Duration in <strong>DAYS</strong> between two relevant dates.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> EVENT_DEATH_INTERVAL</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_INDEX_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_INDEX_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_1_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_1_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_2</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_REDO_2</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_2_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_2_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_2</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_ABLATION_REDO_2</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_3</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_REDO_3</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_3_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_3_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_3</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_ABLATION_REDO_3</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_4</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_REDO_4</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_4_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_4_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_4</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_ABLATION_REDO_4</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">DT_ABLATION_REDO_5</code>  <code class="pb_col_type">Date</code></p>
 <p><strong class="pb_sub_label">INFO</strong> Date of event in <strong>YYYY-MM-DD</strong> format.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> DT_ABLATION_REDO_5</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_ENERGY</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
-</div></td></tr>
-    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_SITE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_ENERGY</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_MAPPING</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_MAPPING</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_OPERATOR</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_OPERATOR</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_LESIONS</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_LESIONS</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_VOLTAGE</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_VOLTAGE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_TYPE</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_TYPE</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">AF_ABLATION_REDO_5_ISOLATION</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> AF_ABLATION_REDO_5_ISOLATION</p>
 </div></td></tr>
     <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">NOTE_ABLATION_REDO_5</code>  <code class="pb_col_type">logical</code></p>
-<p><strong class="pb_sub_label"></strong></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> NOTE_ABLATION_REDO_5</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">SX_AF_QOL</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Atrial Fibrillation Quality of Life Score</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">SX_HF_KCCQ</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Kansas City Cardiomyopathy Questionnaire Score</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">SX_HF_MINNESOTA</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> Minnesota Heart Failure Symptoms Score</p>
+</div></td></tr>
+    <tr><td class="gt_row gt_left" style="color: #666666; font-size: smaller; border-top-width: 1; border-top-style: solid; border-top-color: #EFEFEF;"><div class='gt_from_md'><p><code style="margin-bottom:5px;color:#555555;font-weight:500;line-height:2em;border:solid 1px #499FFE;padding:2px 8px 3px 8px;background-color:#FAFAFA;">HX_FAMILY_CHF</code>  <code class="pb_col_type">logical</code></p>
+<p><strong class="pb_sub_label">INFO</strong> Presence or absence of clinical morbidity.</p>
+<p><strong class="pb_sub_label">DESCRIPTION</strong> HX_FAMILY_CHF</p>
 </div></td></tr>
   </tbody>
   <tfoot class="gt_sourcenotes">
     <tr>
-      <td class="gt_sourcenote" colspan="1"><span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin-left:10px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;padding:2px 10px 2px 10px;">2022-07-14 16:54:15 CDT</span>
+      <td class="gt_sourcenote" colspan="1"><span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin-left:10px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;padding:2px 10px 2px 10px;">2022-07-17 18:08:55 CDT</span>
 <span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;margin:5px 1px 5px 0;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">&lt; 1 s</span>
-<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 1px 5px -1px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">2022-07-14 16:54:15 CDT</span></td>
+<span style="background-color:#FFF;color:#444;padding:0.5em 0.5em;position:inherit;text-transform:uppercase;margin:5px 1px 5px -1px;border:solid 1px #999999;font-variant-numeric:tabular-nums;border-radius:0;padding:2px 10px 2px 10px;">2022-07-17 18:08:56 CDT</span></td>
     </tr>
   </tfoot>
   

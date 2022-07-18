@@ -69,8 +69,9 @@ read_in_messy_data <- function(file_messy) {
 			HX_PHTN = pulmonary_htn,
 			HX_CHF = chf,
 			HX_VHD = valvular_heart_disease_vhd,
+			HX_FAMILY_AF = fh_of_a_fib,
 			NOTES_VHD = notes_on_vhd,
-			DT_TTE = date_of_echocardiogram,
+			DT_ECHO = date_of_echocardiogram,
 			ECHO_SIZE_LA_QUAL = la_size,
 			ECHO_VOLUME_LA_4C = la_4c,
 			ECHO_VOLUME_LA_2C = la_2c,
@@ -83,7 +84,6 @@ read_in_messy_data <- function(file_messy) {
 			AF_DX_TYPE = type_of_af,
 			AF_RISK_CHADSVASC = chadsvasc,
 			AF_RISK_HASBLED = hasbled,
-			AF_RISK_FAMILY = fh_of_a_fib,
 			DT_ABLATION_INDEX = date_of_index_ablation,
 			NOTE_ABLATION_INDEX = notes_on_ablation,
 			AF_ABLATION_INDEX_TYPE = ablation_type,
@@ -140,12 +140,15 @@ read_in_messy_data <- function(file_messy) {
 			LAB_CREATININE = NA,
 			LAB_HEMOGLOBIN = NA,
 			LAB_BNP = NA,
+			LAB_PROBNP = NA,
 			LAB_TROPONIN = NA,
 			LAB_SODIUM = NA,
-			ECHO_VALVE = NA,
+			ECHO_VALVE_DZ = NA,
 			ECHO_VALVE_TYPE = NA,
 			ECHO_VALVE_SEVERITY = NA,
 			ECHO_VOLUME_LV = NA,
+			ECHO_STRAIN_LA = NA,
+			ECHO_STRAIN_LV = NA,
 			ECHO_FUNCTION_LV_QUANT = NA,
 			ECHO_SIZE_LV_QUANT = NA,
 			ECHO_SIZE_LV_QUAL = NA,
@@ -153,11 +156,14 @@ read_in_messy_data <- function(file_messy) {
 			ECHO_LVH_SEVERITY = NA,
 			ECHO_FUNCTION_RV = NA,
 			ECHO_SIZE_RV_QUAL = NA,
+			DT_CMR = NA,
+			CMR_NOTES = NA,
 			AF_DX_BURDEN = NA,
 			AF_DCCV = NA,
 			AF_DCCV_TOTAL = NA,
 			AF_MONITOR_BURDEN = NA,
 			NOTES_MONITOR = NA,
+			DT_AAD = NA,
 			MED_BB = NA,
 			MED_BB_TYPE = NA,
 			MED_BB_DOSE = NA,
@@ -173,59 +179,64 @@ read_in_messy_data <- function(file_messy) {
 			NOTE_LDKA = NA,
 			EVENT_DEATH_INTERVAL = NA,
 			AF_ABLATION_INDEX_ENERGY = NA,
-			AF_ABLATION_INDEX_SITE = NA,
 			AF_ABLATION_INDEX_MAPPING = NA,
 			AF_ABLATION_INDEX_OPERATOR = NA,
 			AF_ABLATION_INDEX_LESIONS = NA,
+			AF_ABLATION_INDEX_VOLTAGE = NA,
 			AF_ABLATION_REDO_1_ENERGY = NA,
-			AF_ABLATION_REDO_1_SITE = NA,
 			AF_ABLATION_REDO_1_MAPPING = NA,
 			AF_ABLATION_REDO_1_OPERATOR = NA,
 			AF_ABLATION_REDO_1_LESIONS = NA,
+			AF_ABLATION_REDO_1_VOLTAGE = NA,
 			AF_ABLATION_REDO_1_TYPE = NA,
 			AF_ABLATION_REDO_1_ISOLATION = NA,
 			DT_ABLATION_REDO_2 = NA,
 			AF_ABLATION_REDO_2 = NA,
 			AF_ABLATION_REDO_2_ENERGY = NA,
-			AF_ABLATION_REDO_2_SITE = NA,
 			AF_ABLATION_REDO_2_MAPPING = NA,
 			AF_ABLATION_REDO_2_OPERATOR = NA,
 			AF_ABLATION_REDO_2_LESIONS = NA,
+			AF_ABLATION_REDO_2_VOLTAGE = NA,
 			AF_ABLATION_REDO_2_TYPE = NA,
 			AF_ABLATION_REDO_2_ISOLATION = NA,
 			NOTE_ABLATION_REDO_2 = NA,
 			DT_ABLATION_REDO_3 = NA,
 			AF_ABLATION_REDO_3 = NA,
 			AF_ABLATION_REDO_3_ENERGY = NA,
-			AF_ABLATION_REDO_3_SITE = NA,
 			AF_ABLATION_REDO_3_MAPPING = NA,
 			AF_ABLATION_REDO_3_OPERATOR = NA,
 			AF_ABLATION_REDO_3_LESIONS = NA,
+			AF_ABLATION_REDO_3_VOLTAGE = NA,
 			AF_ABLATION_REDO_3_TYPE = NA,
 			AF_ABLATION_REDO_3_ISOLATION = NA,
 			NOTE_ABLATION_REDO_3 = NA,
 			DT_ABLATION_REDO_4 = NA,
 			AF_ABLATION_REDO_4 = NA,
 			AF_ABLATION_REDO_4_ENERGY = NA,
-			AF_ABLATION_REDO_4_SITE = NA,
 			AF_ABLATION_REDO_4_MAPPING = NA,
 			AF_ABLATION_REDO_4_OPERATOR = NA,
 			AF_ABLATION_REDO_4_LESIONS = NA,
+			AF_ABLATION_REDO_4_VOLTAGE = NA,
 			AF_ABLATION_REDO_4_TYPE = NA,
 			AF_ABLATION_REDO_4_ISOLATION = NA,
 			NOTE_ABLATION_REDO_4 = NA,
 			DT_ABLATION_REDO_5 = NA,
 			AF_ABLATION_REDO_5 = NA,
 			AF_ABLATION_REDO_5_ENERGY = NA,
-			AF_ABLATION_REDO_5_SITE = NA,
 			AF_ABLATION_REDO_5_MAPPING = NA,
 			AF_ABLATION_REDO_5_OPERATOR = NA,
 			AF_ABLATION_REDO_5_LESIONS = NA,
+			AF_ABLATION_REDO_5_VOLTAGE = NA,
 			AF_ABLATION_REDO_5_TYPE = NA,
 			AF_ABLATION_REDO_5_ISOLATION = NA,
-			NOTE_ABLATION_REDO_5 = NA
+			NOTE_ABLATION_REDO_5 = NA,
+			SX_AF_QOL = NA,
+			SX_HF_KCCQ = NA,
+			SX_HF_MINNESOTA = NA,
+			HX_FAMILY_CHF = NA
 		) |>
-		mutate(across(starts_with("DT"), as.Date))
+		mutate(across(starts_with("DT"), as.Date)) |>
+		mutate(across(starts_with("NOTES"), as.character))
 	
 }
 
@@ -234,6 +245,15 @@ label_data <- function(messy) {
 	
 	raw <-
 		messy |>
+		set_variable_labels(
+			ID_HOSPITAL = "Hospital site",
+			ID_AUTHOR = "Name of reviewer",
+			DEMO_ANCESTRY = "Genetic ancestry",
+			HX_CHF_TYPE = "Preserved or reduced heart failure (<= 50)",
+			SX_AF_QOL = "Atrial Fibrillation Quality of Life Score",
+			SX_HF_MINNESOTA = "Minnesota Heart Failure Symptoms Score",
+			SX_HF_KCCQ = "Kansas City Cardiomyopathy Questionnaire Score",
+		) |>
 		set_value_labels(
 			ID_HOSPITAL = c(UIC = 1, JBVA = 2, ACMC = 3, MS = 4),
 			HX_CHF_TYPE = c(Reduced = 1, Preserved = 2),
@@ -258,5 +278,65 @@ label_data <- function(messy) {
 			EVENT_ICU_TYPE = c(Cardiac = 1, Noncardiac = 2),
 			EVENT_DEATH_TYPE = c(Cardiac = 1, Noncardiac = 2)
 		)
+	
+}
+
+snip_value_labels <- function(x) {
+	
+	if (!is_vector(x)) {
+		stop("Requires a column from a data set that has been `labelled`.")
+	}
+	
+	vals <- unname(val_labels(x))
+	labs <- names(val_labels(x))
+	
+	if (is.null(labs)) {
+		vals <- labs <- levels(factor(x))
+	}
+	
+	
+	# Output
+	glue::glue("{vals} = {labs}\n")
+	
+}
+
+
+snip_variable_labels <- function(x, y) {
+	
+	if (!is_vector(x)) {
+		stop("Requires a column from a data set that has been `labelled`.")
+	}
+	
+	labs <- var_label(x)
+	
+	if (is.null(labs)) {
+		labs <- y
+	}
+	
+	glue::glue("{labs}")
+	
+}
+
+is_var_labelled <- function(x) {
+	
+	var_lab <- var_label(x)
+	
+	if (!is.null(var_lab)) {
+		TRUE
+	} else {
+		FALSE
+	}
+	
+}
+
+is_val_labelled <- function(x) {
+	
+	val_lab <- val_labels(x)
+	
+	if (!is.null(val_lab)) {
+		TRUE
+	} else {
+		FALSE
+	}
 	
 }

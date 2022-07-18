@@ -25,23 +25,27 @@ check_table_information <- function(raw) {
 			columns = starts_with("HX") & !ends_with("TX"),
 			info = "Presence or absence of clinical morbidity."
 		) |>
-		info_columns(
-			columns = ECHO_FUNCTION_LV_QUAL,
-			info = "Values = {lv_fn}"
-		) |>
-		info_snippet(
-			snippet_name = "lv_fn",
-			fn = ~ . %>% select(ECHO_FUNCTION_LV_QUAL) %>% val_labels()
-		) |>
-		info_columns(
-			columns = ECHO_SIZE_LA_QUAL,
-			info = "Values = {la_sz}"
-		) |>
-		info_snippet(
-			snippet_name = "la_sz",
-			fn = ~ . %>% select(ECHO_SIZE_LA_QUAL) %>% val_labels()
-		) |>
-		incorporate()
+		{\(x) 
+			reduce(
+				names(raw),
+				~ .x |> info_columns(
+					columns = all_of(.y),
+					description = snip_variable_labels(eval(parse(text = paste0("raw$", .y))), .y)
+				),
+				.init = x
+			)
+		}() |>
+		{\(x) 
+			reduce(
+				names(select(raw, where(is_val_labelled))),
+				~ .x |> info_columns(
+					columns = all_of(.y), 
+					values = snip_value_labels(eval(parse(text = paste0("raw$", .y))))
+				),
+				.init = x
+			)
+		}() 
+		
 }
 
 check_table_quality <- function(raw) {
